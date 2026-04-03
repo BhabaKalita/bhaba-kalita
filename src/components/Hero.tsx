@@ -74,6 +74,29 @@ export function Hero() {
       className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-20 pt-16 md:pt-0"
     >
       <div className="w-full max-w-6xl mx-auto">
+        {/* Mobile-only profile photo — above ticker */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.7,
+            delay: 0.15,
+            ease: [0.22, 1, 0.36, 1],
+          }}
+          className="lg:hidden mb-6"
+        >
+          <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-surface border-2 border-border overflow-hidden relative">
+            <Image
+              src="/profile.png"
+              alt={siteConfig.name}
+              fill
+              sizes="128px"
+              className="object-cover object-top"
+              priority
+            />
+          </div>
+        </motion.div>
+
         <TickerBar />
 
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-12 lg:gap-16">
