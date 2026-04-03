@@ -1,26 +1,133 @@
 @import "tailwindcss";
 
+/* ────────────────────────────────────────
+   Design tokens matching adhishthite.com
+   Dark mode uses bhabakalita.com palette
+   Light mode uses adhishthite warm cream
+   ──────────────────────────────────────── */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0f172a;
+  --surface: #1e293b;
+  --surface-alt: #172033;
+  --foreground: #f1f5f9;
+  --muted: #94a3b8;
+  --accent: #facc15;
+  --accent-foreground: #0f172a;
+  --border: #293548;
+  --card: #1a2536;
+  --card-hover: #1f2d42;
+  --tag-1: rgba(250, 204, 21, 0.12);
+  --tag-1-text: #facc15;
+  --tag-2: rgba(56, 189, 248, 0.12);
+  --tag-2-text: #38bdf8;
+  --tag-3: rgba(52, 211, 153, 0.12);
+  --tag-3-text: #34d399;
+  --tag-4: rgba(244, 114, 182, 0.12);
+  --tag-4-text: #f472b6;
+  --tag-5: rgba(168, 162, 158, 0.12);
+  --tag-5-text: #a8a29e;
+  --initial-bg: #facc15;
+  --initial-text: #0f172a;
+}
+
+.light {
+  --background: #f5f0e8;
+  --surface: #ffffff;
+  --surface-alt: #ede8df;
+  --foreground: #1c1917;
+  --muted: #78716c;
+  --accent: #b45309;
+  --accent-foreground: #ffffff;
+  --border: #e0d9ce;
+  --card: #ffffff;
+  --card-hover: #faf7f2;
+  --tag-1: rgba(180, 83, 9, 0.10);
+  --tag-1-text: #92400e;
+  --tag-2: rgba(14, 116, 144, 0.10);
+  --tag-2-text: #0e7490;
+  --tag-3: rgba(21, 128, 61, 0.10);
+  --tag-3-text: #15803d;
+  --tag-4: rgba(157, 23, 77, 0.10);
+  --tag-4-text: #9d174d;
+  --tag-5: rgba(120, 113, 108, 0.10);
+  --tag-5-text: #57534e;
+  --initial-bg: #1c1917;
+  --initial-text: #ffffff;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-hover: var(--card-hover);
+  --color-tag-1: var(--tag-1);
+  --color-tag-1-text: var(--tag-1-text);
+  --color-tag-2: var(--tag-2);
+  --color-tag-2-text: var(--tag-2-text);
+  --color-tag-3: var(--tag-3);
+  --color-tag-3-text: var(--tag-3-text);
+  --color-tag-4: var(--tag-4);
+  --color-tag-4-text: var(--tag-4-text);
+  --color-tag-5: var(--tag-5);
+  --color-tag-5-text: var(--tag-5-text);
+  --color-initial-bg: var(--initial-bg);
+  --color-initial-text: var(--initial-text);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+/* ── Marquee animation for skills ── */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 30s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 30s linear infinite;
+}
+
+.marquee-container:hover .animate-marquee-left,
+.marquee-container:hover .animate-marquee-right {
+  animation-play-state: paused;
 }
