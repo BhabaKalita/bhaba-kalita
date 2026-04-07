@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Home, FileText, Sun, Moon, Menu, X } from "lucide-react";
+import { Home, FileText, NotebookPen, Sun, Moon, Menu, X } from "lucide-react";
+import Link from "next/link";
 import { siteConfig, socialLinks } from "@/data/data";
 import { useTheme } from "./ThemeProvider";
 import { SocialIcon } from "./SocialIcon";
@@ -10,6 +11,7 @@ import { SocialIcon } from "./SocialIcon";
 const dockItems = [
   { icon: Home, label: "Home", href: "#home" },
   { icon: FileText, label: "Resume", href: "#experience" },
+  { icon: NotebookPen, label: "Blog", href: "/blog", isRoute: true },
 ];
 
 export function Navigation() {
@@ -61,6 +63,18 @@ export function Navigation() {
       >
         {dockItems.map((item) => {
           const Icon = item.icon;
+          if ("isRoute" in item && item.isRoute) {
+            return (
+              <Link
+                key={item.label}
+                href={item.href}
+                className="relative p-3 rounded-xl text-muted hover:text-foreground hover:bg-surface-alt/50 transition-colors duration-200"
+                aria-label={item.label}
+              >
+                <Icon size={18} />
+              </Link>
+            );
+          }
           const isActive = activeSection === item.href.replace("#", "");
           return (
             <button
@@ -167,6 +181,13 @@ export function Navigation() {
                   {item.label}
                 </button>
               ))}
+              <Link
+                href="/blog"
+                onClick={() => setMobileOpen(false)}
+                className="text-xl font-medium tracking-wide text-muted hover:text-foreground transition-colors duration-200"
+              >
+                Blog
+              </Link>
             </motion.div>
 
             <div className="flex items-center gap-4 pt-4">

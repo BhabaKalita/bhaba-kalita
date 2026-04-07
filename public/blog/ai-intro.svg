@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#facc15"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg1)" rx="16"/>
+  <!-- Neural network nodes -->
+  <circle cx="200" cy="120" r="20" fill="none" stroke="#facc15" stroke-width="2" opacity="0.6"/>
+  <circle cx="200" cy="200" r="20" fill="none" stroke="#facc15" stroke-width="2" opacity="0.6"/>
+  <circle cx="200" cy="280" r="20" fill="none" stroke="#facc15" stroke-width="2" opacity="0.6"/>
+  <circle cx="400" cy="140" r="24" fill="url(#accent1)" opacity="0.3"/>
+  <circle cx="400" cy="260" r="24" fill="url(#accent1)" opacity="0.3"/>
+  <circle cx="600" cy="200" r="28" fill="url(#accent1)" opacity="0.5"/>
+  <!-- Connections -->
+  <line x1="220" y1="120" x2="376" y2="140" stroke="#facc15" stroke-width="1.5" opacity="0.25"/>
+  <line x1="220" y1="120" x2="376" y2="260" stroke="#facc15" stroke-width="1.5" opacity="0.15"/>
+  <line x1="220" y1="200" x2="376" y2="140" stroke="#facc15" stroke-width="1.5" opacity="0.2"/>
+  <line x1="220" y1="200" x2="376" y2="260" stroke="#facc15" stroke-width="1.5" opacity="0.2"/>
+  <line x1="220" y1="280" x2="376" y2="140" stroke="#facc15" stroke-width="1.5" opacity="0.15"/>
+  <line x1="220" y1="280" x2="376" y2="260" stroke="#facc15" stroke-width="1.5" opacity="0.25"/>
+  <line x1="424" y1="140" x2="572" y2="200" stroke="#facc15" stroke-width="1.5" opacity="0.3"/>
+  <line x1="424" y1="260" x2="572" y2="200" stroke="#facc15" stroke-width="1.5" opacity="0.3"/>
+  <!-- Decorative dots -->
+  <circle cx="100" cy="80" r="3" fill="#facc15" opacity="0.3"/>
+  <circle cx="700" cy="100" r="4" fill="#38bdf8" opacity="0.3"/>
+  <circle cx="680" cy="320" r="3" fill="#34d399" opacity="0.3"/>
+  <circle cx="120" cy="340" r="4" fill="#f472b6" opacity="0.2"/>
+  <!-- Label -->
+  <text x="400" y="370" text-anchor="middle" font-family="system-ui" font-size="13" fill="#94a3b8" letter-spacing="3" font-weight="600">ARTIFICIAL INTELLIGENCE</text>
+</svg>

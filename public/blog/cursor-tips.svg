@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg5)" rx="16"/>
+  <!-- Code editor mockup -->
+  <rect x="180" y="60" width="440" height="280" rx="12" fill="#172033" stroke="#293548" stroke-width="1.5"/>
+  <!-- Title bar -->
+  <rect x="180" y="60" width="440" height="32" rx="12" fill="#1a2536"/>
+  <rect x="180" y="80" width="440" height="12" fill="#1a2536"/>
+  <circle cx="200" cy="76" r="5" fill="#f87171" opacity="0.7"/>
+  <circle cx="216" cy="76" r="5" fill="#facc15" opacity="0.7"/>
+  <circle cx="232" cy="76" r="5" fill="#34d399" opacity="0.7"/>
+  <text x="400" y="80" text-anchor="middle" font-family="system-ui" font-size="10" fill="#94a3b8">Cursor IDE</text>
+  <!-- Code lines -->
+  <text x="205" y="120" font-family="monospace" font-size="11" fill="#c084fc" opacity="0.8">const</text>
+  <text x="245" y="120" font-family="monospace" font-size="11" fill="#facc15" opacity="0.8">agent</text>
+  <text x="290" y="120" font-family="monospace" font-size="11" fill="#94a3b8" opacity="0.6">= {</text>
+  <text x="220" y="142" font-family="monospace" font-size="11" fill="#38bdf8" opacity="0.7">model:</text>
+  <text x="275" y="142" font-family="monospace" font-size="11" fill="#34d399" opacity="0.8">"claude-4"</text>
+  <text x="220" y="164" font-family="monospace" font-size="11" fill="#38bdf8" opacity="0.7">tools:</text>
+  <text x="268" y="164" font-family="monospace" font-size="11" fill="#94a3b8" opacity="0.6">[</text>
+  <text x="240" y="186" font-family="monospace" font-size="11" fill="#34d399" opacity="0.8">"search"</text>
+  <text x="305" y="186" font-family="monospace" font-size="11" fill="#94a3b8" opacity="0.6">,</text>
+  <text x="240" y="208" font-family="monospace" font-size="11" fill="#34d399" opacity="0.8">"edit"</text>
+  <text x="240" y="230" font-family="monospace" font-size="11" fill="#34d399" opacity="0.8">"run"</text>
+  <text x="220" y="252" font-family="monospace" font-size="11" fill="#94a3b8" opacity="0.6">]</text>
+  <text x="205" y="274" font-family="monospace" font-size="11" fill="#94a3b8" opacity="0.6">}</text>
+  <!-- AI suggestion glow -->
+  <rect x="268" y="150" width="130" height="18" rx="4" fill="#facc15" opacity="0.06"/>
+  <!-- Cursor sparkle -->
+  <circle cx="590" cy="130" r="24" fill="#facc15" opacity="0.08"/>
+  <circle cx="590" cy="130" r="12" fill="#facc15" opacity="0.15"/>
+  <text x="590" y="135" text-anchor="middle" font-family="system-ui" font-size="14" fill="#facc15" opacity="0.9">&#x2726;</text>
+  <!-- Side labels -->
+  <text x="660" y="140" font-family="system-ui" font-size="10" fill="#facc15" opacity="0.6">AI Autocomplete</text>
+  <text x="660" y="200" font-family="system-ui" font-size="10" fill="#38bdf8" opacity="0.6">Agent Mode</text>
+  <text x="660" y="260" font-family="system-ui" font-size="10" fill="#34d399" opacity="0.6">Multi-file Edits</text>
+  <text x="400" y="375" text-anchor="middle" font-family="system-ui" font-size="13" fill="#94a3b8" letter-spacing="3" font-weight="600">CURSOR IDE</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#172033"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg4)" rx="16"/>
+  <rect x="120" y="130" width="200" height="140" rx="16" fill="#1e293b" stroke="#facc15" stroke-width="2"/>
+  <text x="220" y="175" text-anchor="middle" font-family="system-ui" font-size="14" fill="#facc15" font-weight="700">ServiceNow</text>
+  <text x="220" y="200" text-anchor="middle" font-family="system-ui" font-size="10" fill="#94a3b8">Workflows</text>
+  <text x="220" y="218" text-anchor="middle" font-family="system-ui" font-size="10" fill="#94a3b8">ITSM / CMDB</text>
+  <text x="220" y="236" text-anchor="middle" font-family="system-ui" font-size="10" fill="#94a3b8">Virtual Agent</text>
+  <rect x="480" y="130" width="200" height="140" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="580" y="175" text-anchor="middle" font-family="system-ui" font-size="14" fill="#38bdf8" font-weight="700">Claude AI</text>
+  <text x="580" y="200" text-anchor="middle" font-family="system-ui" font-size="10" fill="#94a3b8">Reasoning</text>
+  <text x="580" y="218" text-anchor="middle" font-family="system-ui" font-size="10" fill="#94a3b8">Code Generation</text>
+  <text x="580" y="236" text-anchor="middle" font-family="system-ui" font-size="10" fill="#94a3b8">Analysis</text>
+  <line x1="320" y1="185" x2="480" y2="185" stroke="#facc15" stroke-width="1.5" opacity="0.5"/>
+  <line x1="480" y1="215" x2="320" y2="215" stroke="#38bdf8" stroke-width="1.5" opacity="0.5"/>
+  <rect x="355" y="170" width="90" height="30" rx="8" fill="#293548"/>
+  <text x="400" y="190" text-anchor="middle" font-family="monospace" font-size="10" fill="#94a3b8">REST API</text>
+  <polygon points="475,182 480,185 475,188" fill="#facc15" opacity="0.5"/>
+  <polygon points="325,212 320,215 325,218" fill="#38bdf8" opacity="0.5"/>
+  <circle cx="400" cy="100" r="3" fill="#facc15" opacity="0.4"/>
+  <circle cx="420" cy="90" r="2" fill="#38bdf8" opacity="0.3"/>
+  <circle cx="380" cy="85" r="2.5" fill="#34d399" opacity="0.3"/>
+  <circle cx="400" cy="310" r="3" fill="#f472b6" opacity="0.3"/>
+  <circle cx="380" cy="320" r="2" fill="#facc15" opacity="0.3"/>
+  <text x="400" y="375" text-anchor="middle" font-family="system-ui" font-size="13" fill="#94a3b8" letter-spacing="3" font-weight="600">SERVICENOW + CLAUDE</text>
+</svg>
