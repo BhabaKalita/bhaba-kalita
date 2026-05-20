@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bgM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="mythosGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bgM)" rx="16"/>
+  <!-- Central Mythos card -->
+  <rect x="250" y="95" width="300" height="170" rx="16" fill="#172033" stroke="url(#mythosGlow)" stroke-width="2.5"/>
+  <text x="400" y="145" text-anchor="middle" font-family="system-ui" font-size="32" fill="#e9d5ff" font-weight="800" letter-spacing="2">MYTHOS</text>
+  <text x="400" y="172" text-anchor="middle" font-family="system-ui" font-size="11" fill="#c084fc" letter-spacing="3" font-weight="600">CAPYBARA TIER</text>
+  <rect x="310" y="188" width="180" height="28" rx="8" fill="#293548"/>
+  <text x="400" y="207" text-anchor="middle" font-family="monospace" font-size="10" fill="#facc15">Project Glasswing</text>
+  <text x="400" y="245" text-anchor="middle" font-family="system-ui" font-size="10" fill="#94a3b8">Defensive Cybersecurity Preview</text>
+  <!-- Left: security shield -->
+  <path d="M130 130 L175 152 V195 C175 225 130 248 130 248 C130 248 85 225 85 195 V152 Z" fill="#1e293b" stroke="#34d399" stroke-width="2"/>
+  <path d="M118 192 L128 205 L148 178" fill="none" stroke="#34d399" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="130" y="275" text-anchor="middle" font-family="system-ui" font-size="10" fill="#34d399" font-weight="600">SECURITY</text>
+  <text x="130" y="292" text-anchor="middle" font-family="system-ui" font-size="9" fill="#94a3b8">Vuln Discovery</text>
+  <!-- Right: benchmark stats -->
+  <rect x="580" y="115" width="130" height="55" rx="10" fill="#1e293b" stroke="#34d399" stroke-width="1.5"/>
+  <text x="645" y="142" text-anchor="middle" font-family="system-ui" font-size="22" fill="#34d399" font-weight="700">100%</text>
+  <text x="645" y="160" text-anchor="middle" font-family="system-ui" font-size="9" fill="#94a3b8">Cybench</text>
+  <rect x="580" y="185" width="130" height="55" rx="10" fill="#1e293b" stroke="#c084fc" stroke-width="1.5"/>
+  <text x="645" y="212" text-anchor="middle" font-family="system-ui" font-size="22" fill="#c084fc" font-weight="700">93.9%</text>
+  <text x="645" y="230" text-anchor="middle" font-family="system-ui" font-size="9" fill="#94a3b8">SWE-bench</text>
+  <!-- Tier ladder below -->
+  <rect x="200" y="295" width="120" height="32" rx="8" fill="#1e293b" stroke="#64748b" stroke-width="1"/>
+  <text x="260" y="316" text-anchor="middle" font-family="system-ui" font-size="9" fill="#94a3b8">Haiku / Sonnet</text>
+  <rect x="340" y="285" width="120" height="42" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="400" y="312" text-anchor="middle" font-family="system-ui" font-size="10" fill="#38bdf8" font-weight="600">Opus 4.7</text>
+  <rect x="480" y="275" width="120" height="52" rx="8" fill="#2e1064" stroke="#c084fc" stroke-width="2"/>
+  <text x="540" y="308" text-anchor="middle" font-family="system-ui" font-size="11" fill="#e9d5ff" font-weight="700">Mythos</text>
+  <!-- Decorative dots -->
+  <circle cx="90" cy="90" r="3" fill="#f472b6" opacity="0.4"/>
+  <circle cx="710" cy="85" r="4" fill="#38bdf8" opacity="0.35"/>
+  <circle cx="720" cy="310" r="3" fill="#facc15" opacity="0.3"/>
+  <circle cx="80" cy="330" r="2.5" fill="#c084fc" opacity="0.35"/>
+  <text x="400" y="375" text-anchor="middle" font-family="system-ui" font-size="13" fill="#94a3b8" letter-spacing="3" font-weight="600">CLAUDE MYTHOS</text>
+</svg>

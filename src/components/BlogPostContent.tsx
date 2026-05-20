@@ -83,6 +83,26 @@ function renderMarkdown(content: string) {
           {parseInline(line.slice(2))}
         </blockquote>
       );
+    } else if (/^!\[([^\]]*)\]\(([^)]+)\)$/.test(line.trim())) {
+      const match = line.trim().match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+      if (match) {
+        const [, alt, src] = match;
+        elements.push(
+          <figure key={`img-${i}`} className="my-8">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={src}
+              alt={alt}
+              className="w-full rounded-xl border border-border"
+            />
+            {alt ? (
+              <figcaption className="text-center text-muted text-xs mt-2">
+                {alt}
+              </figcaption>
+            ) : null}
+          </figure>
+        );
+      }
     } else if (line.startsWith("- **")) {
       const listItems: string[] = [line];
       while (i + 1 < lines.length && lines[i + 1].startsWith("- ")) {
