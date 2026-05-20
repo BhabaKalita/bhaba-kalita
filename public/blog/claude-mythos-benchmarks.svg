@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320">
+  <defs>
+    <linearGradient id="bgB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#172033"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="320" fill="url(#bgB)" rx="12"/>
+  <text x="400" y="40" text-anchor="middle" font-family="system-ui" font-size="12" fill="#94a3b8" letter-spacing="2" font-weight="600">BENCHMARK GAPS (MYTHOS VS OPUS 4.6)</text>
+  <!-- SWE-bench bar -->
+  <text x="80" y="85" font-family="system-ui" font-size="10" fill="#94a3b8">SWE-bench</text>
+  <rect x="180" y="70" width="403" height="18" rx="4" fill="#1e293b"/>
+  <rect x="180" y="70" width="376" height="18" rx="4" fill="#38bdf8" opacity="0.5"/>
+  <rect x="180" y="70" width="437" height="18" rx="4" fill="#c084fc" opacity="0.85"/>
+  <text x="630" y="84" font-family="monospace" font-size="10" fill="#c084fc">93.9%</text>
+  <text x="630" y="100" font-family="monospace" font-size="9" fill="#64748b">vs 80.8%</text>
+  <!-- Cybench bar -->
+  <text x="80" y="145" font-family="system-ui" font-size="10" fill="#94a3b8">Cybench</text>
+  <rect x="180" y="130" width="403" height="18" rx="4" fill="#1e293b"/>
+  <rect x="180" y="130" width="403" height="18" rx="4" fill="#34d399" opacity="0.9"/>
+  <text x="630" y="144" font-family="monospace" font-size="10" fill="#34d399">100%</text>
+  <text x="630" y="160" font-family="monospace" font-size="9" fill="#64748b">perfect score</text>
+  <!-- USAMO bar -->
+  <text x="80" y="205" font-family="system-ui" font-size="10" fill="#94a3b8">USAMO 2026</text>
+  <rect x="180" y="190" width="403" height="18" rx="4" fill="#1e293b"/>
+  <rect x="180" y="190" width="171" height="18" rx="4" fill="#38bdf8" opacity="0.5"/>
+  <rect x="180" y="190" width="393" height="18" rx="4" fill="#f472b6" opacity="0.85"/>
+  <text x="630" y="204" font-family="monospace" font-size="10" fill="#f472b6">97.6%</text>
+  <text x="630" y="220" font-family="monospace" font-size="9" fill="#64748b">vs 42.3%</text>
+  <rect x="180" y="250" width="12" height="12" rx="2" fill="#c084fc"/>
+  <text x="200" y="260" font-family="system-ui" font-size="10" fill="#94a3b8">Mythos Preview</text>
+  <rect x="340" y="250" width="12" height="12" rx="2" fill="#38bdf8" opacity="0.5"/>
+  <text x="360" y="260" font-family="system-ui" font-size="10" fill="#94a3b8">Opus 4.6</text>
+  <text x="400" y="295" text-anchor="middle" font-family="system-ui" font-size="10" fill="#64748b">Source: Anthropic system card (April 2026)</text>
+</svg>
