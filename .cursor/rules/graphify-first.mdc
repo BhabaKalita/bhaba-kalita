@@ -1,0 +1,31 @@
+---
+description: Start from Graphify graph; avoid whole-repo scans unless necessary
+alwaysApply: true
+---
+
+# Graphify-first project context
+
+## First step (every task)
+
+Before reading application source, open and use:
+
+1. **`graphify-out/GRAPH_REPORT.md`** — overview, communities, surprising links, suggested questions.
+2. **`graphify-out/graph.json`** — when you need exact nodes, edges, `source_file`, or neighborhoods.
+
+Treat these as the default map of the repo.
+
+## Default: no broad scanning
+
+- Do **not** start with repo-wide listing, unscoped semantic search, or global grep.
+- Use the graph to see **which files and concepts** matter; then read **only** those paths (from node/edge `source_file` or hyperedges), plus anything the user explicitly attached or named.
+- Prefer following relationships in the graph (same community, edges, suggested questions) over exploring directories at random.
+
+## When you may expand scope
+
+- The user explicitly asks to search the whole repo or a broad path.
+- **`graphify-out/graph.json` or `GRAPH_REPORT.md` is missing** — say the graph needs a build (`graphify` / `graphify .`); use the smallest read needed to confirm, then stop until the graph exists.
+- A required file or symbol is **not** in the graph — say so, propose updating Graphify, and ask whether to read that path narrowly.
+
+## After you know where to edit
+
+Follow existing project rules (e.g. Next.js guidance in `AGENTS.md`). Graphify tells you *where* and *how things connect*; framework docs and the user still govern *how* to implement changes.
