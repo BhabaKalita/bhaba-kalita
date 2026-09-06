@@ -26,7 +26,9 @@ export interface Experience {
 
 export interface Service {
   title: string;
-  iconType: "server" | "code" | "cloud";
+  iconType: "bot" | "server" | "code" | "cloud";
+  highlights?: string[];
+  summary: string;
   description: string[];
 }
 
@@ -189,29 +191,54 @@ export const experiences: Experience[] = [
 
 export const services: Service[] = [
   {
-    title: "ServiceNow Application Development",
-    iconType: "server",
+    title: "AI Agent Development",
+    iconType: "bot",
+    highlights: ["MCP Servers", "Tool Calling", "Multi-step Agents"],
+    summary:
+      "Design and build AI agents that reason, plan, and take action across real systems — not just chat interfaces.",
     description: [
-      "Crafting seamless ServiceNow solutions — configuring modules, optimizing ITSM processes, and integrating Predictive Intelligence for enhanced workflows.",
-      "From developing powerful workflows to harnessing the potential of Virtual Agents, creating efficient and user-friendly experiences.",
-      "Shaping GenAI capabilities, ensuring a cohesive blend of automation and intelligence in every application.",
+      "Connect agents to Model Context Protocol (MCP) servers so they securely use tools, APIs, and data sources.",
+      "Automate multi-step workflows with clear guardrails, observability, and human-in-the-loop controls.",
+    ],
+  },
+  {
+    title: "ServiceNow Expertise",
+    iconType: "server",
+    highlights: ["CMDB", "Asset Management", "SPM", "CSM"],
+    summary:
+      "Design, configure, and optimize ServiceNow solutions across **CMDB, ITSM, ITOM, FSM, and Asset Management**, ensuring configuration and operational data remains accurate, reliable, and actionable.",
+    description: [
+      "Configure and optimize **CMDB and Asset Management**, including data governance, identification and reconciliation, Discovery, and integrations to maintain high-quality configuration data.",
+      "Develop and implement **ITSM solutions** across Incident, Problem, Change, Request, Knowledge, and Service Catalog management to streamline IT operations.",
+      "Build and enhance **Field Service Management (FSM)** solutions to automate field operations, task assignment, scheduling, and service delivery.",
+      "Implement **Cloud Discovery** to discover and map cloud infrastructure, applications, and dependencies across enterprise environments.",
+      "Deliver **Strategic Portfolio Management (SPM)** and **Customer Service Management (CSM)** solutions that align demand, delivery, customer support, and business objectives.",
+      "Develop **AI-powered and automation-driven workflows** using ServiceNow capabilities such as **Now Assist, Predictive Intelligence, Virtual Agent, and Agentic AI** to reduce manual effort and improve operational efficiency.",
+      "Design and integrate **Moveworks** with ServiceNow to enable AI-driven employee support, request automation, and intelligent service experiences.",
+      "Build complex **workflows, integrations, business rules, Scripted REST APIs, and automation solutions** to improve ServiceNow operations and eliminate repetitive manual processes.",
     ],
   },
   {
     title: "Full Stack Development",
     iconType: "code",
-    description: [
+    summary:
       "Creating sleek React-Redux interfaces and architecting robust backends with Node, Express, and Flask for seamless end-to-end application experiences.",
+    description: [
       "Building responsive front ends with React-Redux, crafting intuitive back-ends using Node.js and Express.",
     ],
   },
   {
     title: "Cloud Infra-Architecture",
     iconType: "cloud",
+    summary:
+      "Design, deploy, and maintain cloud infrastructure and applications across **Amazon Web Services (AWS)** and **Microsoft Azure**, with hands-on experience integrating cloud services with enterprise applications and ServiceNow.",
     description: [
-      "Working on multiple cloud platforms including developing custom ITSM applications in ServiceNow Cloud Platform.",
-      "Hosting and maintaining websites on virtual machine instances along with integration of databases.",
-      "Setting up streaming jobs from DB to Server or vice-versa on Azure and AWS.",
+      "Work with **AWS and Microsoft Azure** cloud platforms to design, deploy, and maintain scalable infrastructure and application environments.",
+      "Deploy and manage applications and websites on **virtual machines, compute instances, and cloud-hosted environments**, including database integration.",
+      "Work with key **AWS services** such as EC2, S3, RDS, Lambda, IAM, CloudWatch, and networking components.",
+      "Work with **Microsoft Azure services** including Virtual Machines, Azure Storage, Azure SQL Database, Functions, Azure Monitor, Entra ID, and networking services.",
+      "Configure and maintain **database-to-server and server-to-database data pipelines**, including streaming and automated data processing across AWS and Azure environments.",
+      "Integrate cloud infrastructure with enterprise platforms and applications to support **monitoring, automation, data synchronization, and operational workflows**.",
     ],
   },
 ];
