@@ -1,9 +1,10 @@
 "use client";
 
-import { Server, Code2, Cloud } from "lucide-react";
+import { Bot, Server, Code2, Cloud } from "lucide-react";
 import type { Service } from "@/data/data";
 
 const iconMap = {
+  bot: Bot,
   server: Server,
   code: Code2,
   cloud: Cloud,
